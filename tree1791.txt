@@ -1,4 +1,4 @@
 generate-folder-tree/
+   README.MD
    setup.py
    main.py
-   tree.txt
