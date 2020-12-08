@@ -1,0 +1,4 @@
+generate-folder-tree/
+   setup.py
+   main.py
+   tree.txt
