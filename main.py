@@ -14,7 +14,7 @@ class TreeGenerator:
         self.SPACES = 3
         self.INDENT = self.SPACES * " "
         self.ROOT_DIRECTORY = os.getcwd()
-        self.ID = random.randrange(1000, 10000)
+        self.ID = random.randrange(1000, 9999)
         self.FILE_NAME = "tree" + str(self.ID) + ".txt"
     '''
         @returns: Boolean.
