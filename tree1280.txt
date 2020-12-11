@@ -1,0 +1,8 @@
+generate-folder-tree/
+   README.MD
+   samples/
+      tree1645.txt
+      tree8973.txt
+      tree6905.txt
+   setup.py
+   main.py

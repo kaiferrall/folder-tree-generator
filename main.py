@@ -7,7 +7,7 @@ INDENT = SPACES * " "
 ROOT_DIRECTORY = os.getcwd()
 ID = random.randrange(1000, 9999)
 FILE_NAME = "tree" + str(ID) + ".txt"
-IGNORE = [ r'^\/?(?:\w+\/)*(\.\w+)', FILE_NAME ]
+IGNORE = [ r'^\/?(?:\w+\/)*(\.\w+)' ]
 '''
     @returns: Boolean.
     @params: string item: file name.
@@ -50,16 +50,17 @@ def _generate_tree(directory = "."):
 
 def create_tree_file(filename = None):
     try:
+        global FILE_NAME
         if filename is None: filename = FILE_NAME
         IGNORE.append(filename)
         file = open(filename, "w")
         tree = _generate_tree()
         file.write(tree)
-        file.close()
         return True
     except Exception as e:
-        file.close()
         print(e)
+    finally:
+        file.close()
 
 
 if __name__ == "__main__":
