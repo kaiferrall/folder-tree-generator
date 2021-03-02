@@ -1,4 +1,4 @@
-<h1>Simple Python script which generators a text file with the current dictories file structure.</h1>
+<h1>Simple Python script which generators a text file with the current dictories tree file structure.</h1>
 
 <h2>Use:</h2>
 <ul>
